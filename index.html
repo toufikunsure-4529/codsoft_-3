@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator App</title>
+    <meta name="description"
+      content="A powerful calculator app for performing various mathematical calculations.">
+    <meta name="keywords"
+      content="calculator, math, mathematics, arithmetic, calculations">
+    <meta name="author" content="Your Name or Organization">
+    <meta name="version" content="1.0">
+    <meta name="language" content="en">
+    <meta property="og:url" content="https://nowcalculator.netlify.app" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" readonly>
+
+      <div class="key">
+        <button onclick="clearInput()" class="clear">C</button>
+        <button onclick="del()" class="delete">DEL</button>
+        <button class="operator" onclick="append('%')">%</button>
+        <button class="operator" onclick="append('/')">/</button>
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button class="operator" onclick="append('*')">*</button>
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button class="operator" onclick="append('-')">-</button>
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button class="operator" onclick="append('+')">+</button>
+        <button onclick="append('00')">00</button>
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
